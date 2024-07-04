@@ -1,154 +1,286 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
 }
 
 :root {
-    --primary-text-color: #183b56;
-    --secondary-text-color: #577592;
-    --accent-color: #2294ed;
-    --accent-color-dark: #1d69a3;
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    color: var(--primary-text-color);
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
 }
 
 p {
-    font-family: "Roboto", sans-serif;
-    color: var(--secondary-text-color);
-    line-height: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  color: var(--secondary-text-color);
+  line-height: 1.4rem;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .flex {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .container {
-    max-width: 1280px;
-    margin-inline: auto;
-    overflow: hidden;
+  max-width: 1280px;
+  margin-inline: auto;
+  overflow: hidden;
 }
 
 nav {
-    background-color: #f3faff;
-    box-shadow: 0 0 4px #bbd0e2;
-    position: fixed;
-    top: 0;
-    z-index: 99;
-    left: 0;
-    right: 0;
+  background-color: #f3faff;
+  box-shadow: 0 0 4px #bbd0e2;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
 }
 
 .main-nav {
-    justify-content: space-between;
-    padding-block: 8px;
+  justify-content: space-between;
+  padding-block: 8px;
 }
 
 .company-logo img {
-    width: 120px;
+  width: 120px;
 }
 
 .nav-links ul {
-    gap: 16px;
+  gap: 2rem;
 }
 
 .hover-link {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .hover-link:hover {
-    color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .hover-link:active {
-    color: red;
+  color: red;
 }
 
 .nav-item.active {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .search-bar {
-    height: 32px;
-    gap: 8px;
+  height: 32px;
+  gap: 8px;
 }
 
 .news-input {
-    width: 200px;
-    height: 100%;
-    padding-inline: 12px;
-    border-radius: 4px;
-    border: 2px solid #bbd0e2;
-    font-family: "Roboto", sans-serif;
+  width: 200px;
+  height: 100%;
+  padding-inline: 12px;
+  border-radius: 4px;
+  border: 2px solid #bbd0e2;
+  font-family: "Roboto", sans-serif;
 }
 
 .search-button {
-    background-color: var(--accent-color);
-    color: white;
-    padding: 8px 24px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: "Roboto", sans-serif;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
 }
 
 .search-button:hover {
-    background-color: var(--accent-color-dark);
+  background-color: var(--accent-color-dark);
 }
 
 main {
-    padding-block: 20px;
-    margin-top: 80px;
+  padding-block: 20px;
+  margin-top: 80px;
 }
 
 .cards-container {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 30px;
-    align-items: start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  align-items: start;
 }
 
 .card {
-    width: 400px;
-    min-height: 400px;
-    box-shadow: 0 0 4px #d4ecff;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: #fff;
-    overflow: hidden;
-    transition: all 0.3s ease;
+  width: 400px;
+  min-height: 400px;
+  box-shadow: 0 0 4px #d4ecff;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #e9e3e3;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
 .card:hover {
-    box-shadow: 1px 1px 8px #d4ecff;
-    background-color: #f9fdff;
-    transform: translateY(-2px);
+  box-shadow: 1px 1px 8px #d4ecff;
+  background-color: #f9fdff;
+  transform: translateY(-2px);
 }
 
 .card-header img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .card-content {
-    padding: 12px;
+  padding: 12px;
 }
 
 .news-source {
-    margin-block: 12px;
+  margin-block: 12px;
+}
+
+.card {
+  margin-top: 1.5rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  .main-nav {
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    /* background-color: red; */
+  }
+
+  .flex {
+    align-items: flex-start;
+  }
+
+  .logo-nav {
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 1rem;
+    & a img {
+      width: 5rem;
+    }
+  }
+  .search-bar {
+    width: 90%;
+    margin: auto;
+    & .news-input {
+      width: 100%;
+      border-radius: 5rem;
+    }
+    & button {
+      border-radius: 5rem;
+    }
+  }
+
+  nav {
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    margin-top: 3.5rem;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 751px) {
+ 
+
+  .flex {
+    align-items: flex-start;
+  }
+
+  .logo-nav {
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 1rem;
+    & a img {
+      width: 5rem;
+    }
+  }
+  .search-bar {
+    width: 90%;
+    margin: auto;
+    & .news-input {
+      width: 60%;
+      border-radius: 5rem;
+    }
+    & button {
+      border-radius: 5rem;
+    }
+  }
+
+  nav {
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    margin-top: 3.5rem;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    & .card-header img{
+       min-height: 330px;
+    }
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1024px) {
+    .card {
+        margin-top: 1.5rem;
+        width: 48%;
+       min-height: 400px;
+        overflow: hidden;
+        & .card-header img{
+           min-height: 200px;
+        }
+      }
+
+      .main-nav{
+        padding: 0.5rem 1rem;
+      }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+    .card {
+       
+        width: 32%;
+       min-height: 400px;
+        overflow: hidden;
+        & .card-header img{
+           min-height: 200px;
+        }
+      }
+
+      .main-nav{
+        padding: 0.5rem 1rem;
+      }
+
+      .cards-container{
+        
+      }
 }
